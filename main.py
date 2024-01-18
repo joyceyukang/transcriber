@@ -1,10 +1,10 @@
 from flask import Flask, render_template
-from deepgram import Deepgram
 from dotenv import load_dotenv
 import os
 import asyncio
 from aiohttp import web
 from aiohttp_wsgi import WSGIHandler
+from deepgram import Deepgram
 
 from typing import Dict, Callable
 
