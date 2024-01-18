@@ -3,7 +3,11 @@ from deepgram import Deepgram
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 app = Flask(__name__)
+
+dg_client = Deepgram(os.getenv('DEEPGRAM_API_KEY'))
 
 @app.route('/')
 def index():
